@@ -1,6 +1,12 @@
 body {
 		background-color: #F0DB4F;
+		padding: 10% 0 10% 0;
 }
+
+/*header, footer{
+	background-color: #F0DB4F;
+	padding: 10% 0 10% 0;
+}*/
 
 .container {
 	background-color: #323330;
@@ -23,5 +29,15 @@ body {
 	margin-left: 15%;
 	margin-right: 15%;
 	line-height: 40px;
-	width: 75%;
+	width: 75;
+}
+
+.answers {
+	display: inline;
+	font-size: 15px;
+}
+.subcontainer {
+	background-color: #F5F4F0;
+	width: 65%;
+	margin-left: 20%;
 }
