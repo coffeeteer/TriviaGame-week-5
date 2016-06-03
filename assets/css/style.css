@@ -3,6 +3,11 @@ body {
 		padding: 10% 0 10% 0;
 }
 
+@font-face{
+	font-family:"digital-7";
+	src: url('digital-7.ttf') format('truetype');
+}
+
 /*header, footer{
 	background-color: #F0DB4F;
 	padding: 10% 0 10% 0;
@@ -40,4 +45,15 @@ body {
 	background-color: #F5F4F0;
 	width: 65%;
 	margin-left: 20%;
+}
+
+#timer {
+	text-align: center;
+	font-size: 30pt;
+	font-family: 'digital-7';
+	color:#000;
+	font-size: 55pt;
+	color: #77DD77;
+	text-shadow:  0 0 12px #39FF14;
+	}
 }
