@@ -48,12 +48,25 @@ body {
 }
 
 #timer {
-	text-align: center;
+	margin: 0 auto;
+/*	display: inline-block;*/
 	font-size: 30pt;
 	font-family: 'digital-7';
 	color:#000;
 	font-size: 55pt;
 	color: #77DD77;
 	text-shadow:  0 0 12px #39FF14;
+	background-color: #B2ACAB;
+	padding: 0 10px;	
+	border-radius: 3px;
+	position: absolute;
+	left: 50%;
+	top: 14%;
 	}
+
+.submit {
+	padding: 3px 5px;
+	border-radius: 3px;
+	margin: 20px;
+	margin-left: 120px;
 }

@@ -16,10 +16,14 @@ $(document).ready(function() {
 	console.log(i);
 	function clear() {
 	  clearInterval(m);
-
 	}
 	//setTimeout('clear()', 2000);
-
+var correct [];
+var	incorrect [];
+function store(){
+	toArray();
+	
+}
 
 });
 

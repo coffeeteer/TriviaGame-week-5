@@ -12,17 +12,18 @@
 <body>
 	<header>
 		<div id="timer">
-			
+
 		</div>
 	</header>
 		<div class="container">
 			<div class = "subcontainer">
 				<h1 id="title">Totally Unimportant JavaScript Trivia</h1>
+				<form>
 				<ol class="questions">
 					<li>Who is original creator of JavaScript?</li>
 					<!-- Brendan Eich -->
 					    <span class="answers">
-						  <input type="radio" name="creator" value="Steve Jobs" class="answers"> Steve Jobs &nbsp;
+						  <input type="radio" name="creator" value="Steve Jobs" class="answers" > Steve Jobs &nbsp;
 						  <input type="radio" name="creator" value="Brandan Eich" class="answers"> Brandan Eich &nbsp;
 						  <input type="radio" name="creator" value="Bill Gates" class="answers"> Bill Gates &nbsp;
 						  <input type="radio" name="creator" value="Jesse Eisenberg" class="answers"> Jesse Eisenberg <br>
@@ -47,14 +48,14 @@
 					<li>Java and JavaScript are the exact same thing.</li>
 					<!-- false -->
 					<span class="answers">
-						  <input type="radio" name="T or F" value="True"> True &nbsp;
-						  <input type="radio" name="T or F"> False<br>
+						  <input type="radio" name="T or F1" value="True"> True &nbsp;
+						  <input type="radio" name="T or F"1> False<br>
 					</span><br>	  
 					<li>The only non-primitive data type is an Object.</li>
 					<!-- true -->
 					<span class="answers">
-						  <input type="radio" name="T or F" value="True"> True &nbsp;
-						  <input type="radio" name="T or F"> False<br>
+						  <input type="radio" name="T or F2" value="True"> True &nbsp;
+						  <input type="radio" name="T or F2"> False<br>
 					</span><br>
 					<li>What browser did JavaScript first appear?</li>
 					<!-- Netscape Navigator -->
@@ -67,10 +68,10 @@
 					<li>What company owns the trademark to JavaScript?</li>
 					<!-- Oracle -->
 						<span class="answers">
-						  <input type="radio" name="browser" value="Oracle"> Oracle &nbsp;
-						  <input type="radio" name="browser" value="Mozilla" class="answers"> Mozilla &nbsp;					
-						  <input type="radio" name="browser" value="Apple" class="answers"> Apple &nbsp;
-						  <input type="radio" name="browser" value="McAfee Antivirus" class="answers"> McAfee Antivirus<br>
+						  <input type="radio" name="antivirus" value="Oracle"> Oracle &nbsp;
+						  <input type="radio" name="antivirus" value="Mozilla" class="answers"> Mozilla &nbsp;					
+						  <input type="radio" name="antivirus" value="Apple" class="answers"> Apple &nbsp;
+						  <input type="radio" name="antivirus" value="McAfee Antivirus" class="answers"> McAfee Antivirus<br>
 						</span><br>
 					<li>Who is the person that developed JSON (JavaScript Object Notation)?</li>
 					<!-- Douglas Crockford -->
@@ -91,10 +92,14 @@
 					<li>The term 'bug' came from Grace Hopper an early software engineer where an actual moth was pulled out of an early electromechanical computer.</li>
 					<!-- true -->
 					<span class="answers">
-						  <input type="radio" name="T or F" value="True"> True &nbsp;
-						  <input type="radio" name="T or F"> False
+						  <input type="radio" name="T or F3" value="True"> True &nbsp;
+						  <input type="radio" name="T or F3"> False
 					</span>
 				</ol>
+			
+				<button type="submit" name="submit" class="submit">Submit!</button>
+
+				</form>
 			</div>
 		</div>
 	<footer>
