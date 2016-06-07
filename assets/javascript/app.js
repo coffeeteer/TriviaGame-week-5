@@ -1,31 +1,42 @@
 $(document).ready(function() {
 
 
-	var i = 120;
-	function timer() {
-		i --;
-		var x = document.getElementById("timer").innerHTML = i;
+// 	var i = 120;
+// 	function timer() {
+// 		i --;
+// 		var x = document.getElementById("timer").innerHTML = i;
 		
-		if (i ===0) {
-			alert("Test is over");
-			clear();
+// 		if (i ===0) {
+// 			alert("Test is over");
+// 			clear();
+// 		}
+// 	}
+// 	var m = setInterval(timer, 1000);
+// 	document.getElementById("timer").innerHTML = i; 
+// 	console.log(i);
+// 	function clear() {
+// 	  clearInterval(m);
+// 	}
+// 	//setTimeout('clear()', 2000);
+// function test() {
+// 	var test = $('#tester').val();
+
+// 	$('#tester').alert(test);
+// }
+
+
+
+function dataCapture(){
+	var test = [];
+	$('form input[type=radio]').each(function() {
+		if($(this).is(':checked').val()) {
+			test.push($(this).attr('value'));
 		}
+	});
+	alert(test);
+	console.log(test);
+	console.log(dataCapture());
 	}
-	var m = setInterval(timer, 1000);
-	document.getElementById("timer").innerHTML = i; 
-	console.log(i);
-	function clear() {
-	  clearInterval(m);
-	}
-	//setTimeout('clear()', 2000);
-function test() {
-	var test = $('#tester').val();
-
-	$('#tester').alert(test);
-}
-
-
-
 
 
 
