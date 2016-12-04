@@ -1,6 +1,7 @@
 body {
 		background-color: #F0DB4F;
 		padding: 10% 0 10% 0;
+		font-family: 'Quattrocento Sans', 'Arial', sans-serif;
 }
 
 @font-face{
@@ -21,11 +22,10 @@ body {
 #title {
 	text-align: left;
 	font-family: 'Oleo Script', cursive;
-	font-size: 25pt;
-	margin-top: 5%;
-	margin-left: 15%;
-	margin-right: 15%;
+	font-size: 30pt;
+	margin: 2% 15% 25px;
 	line-height: 50px;
+	padding-top: 20px;
 }
 
 .questions {
@@ -35,6 +35,14 @@ body {
 	margin-right: 15%;
 	line-height: 40px;
 	width: 75;
+}
+
+input[type=radio]{
+	display: inline-block;
+}
+
+input[type=radio]:hover {
+	color: #fff;
 }
 
 .testQuestions {
