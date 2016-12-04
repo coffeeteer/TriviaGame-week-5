@@ -39,10 +39,15 @@ body {
 
 input[type=radio]{
 	display: inline-block;
+	/*visibility: hidden;*/
 }
 
 input[type=radio]:hover {
-	color: #fff;
+	cursor: pointer;
+}
+
+span.question-text:hover {
+	color: #666;
 }
 
 .testQuestions {
