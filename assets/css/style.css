@@ -83,9 +83,9 @@ label.question-text {
 	font-family: 'digital-7';
 	color:#000;
 	font-size: 55pt;
-	color: #77DD77;
-	text-shadow:  0 0 12px #39FF14;
-	background-color: #B2ACAB;
+	color: #f0DB4F;
+	text-shadow:  0 0 12px #f0DB4F;
+	background-color: #000;
 	padding: 0 10px;	
 	border-radius: 3px;
 	position: absolute;

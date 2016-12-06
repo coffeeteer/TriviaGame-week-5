@@ -11,16 +11,56 @@
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
 <body>
+	<!-- New Modal-->
+		<div class="modal hide fade" id="myModal">
+		  <div class="modal-header">
+		    <a class="close" data-dismiss="modal">×</a>
+		    <h3>JavaScript Quiz</h3>
+		  </div>
+		  <div class="modal-body">
+		    <p>Are you ready to begin?</p>
+		  </div>
+		  <div class="modal-footer">
+		    <a href="#" class="btn">Close</a>
+		    <a href="#" class="btn btn-primary">Yup</a>
+		  </div>
+		</div>
+		<!-- End New Modal -->
 	<header>
 		<div id="timer">
-
 		</div>
+		<!-- Button trigger modal -->
+		<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		  Launch demo modal
+		</button> -->
+
+		<!-- Modal -->
+		<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+		      </div>
+		      <div class="modal-body">
+		        <h1>Are you ready to begin the quiz?</h1>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Yup</button>
+		      </div>
+		    </div>
+		  </div>
+		</div> -->
+		<!-- End Modal -->
+
 	</header>
 		<div class="container">
 			<div class="subcontainer">
-				<header>
-					<h1 id="title">Totally Unimportant JavaScript Trivia</h1>	
-				</header>
+		
+				<div>
+					<h1 id="title">Totally Unimportant JavaScript Trivia</h1>
+				</div>
 				
 				<ol class="questions">
 					<li>1. Who is original creator of JavaScript?</li>

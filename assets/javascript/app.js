@@ -1,6 +1,6 @@
 $(document).ready(function() {
-
-
+	//load modal at beginning 
+	//and end of test
 	var i = 120;
 	function timer() {
 		i --;
@@ -38,5 +38,8 @@ function dataCapture(){
 
 	console.log(test);
 	console.log(dataCapture());
-	
 });
+
+$(window).on('load', function () {
+	  $('#myModal').modal('show');
+	});	
