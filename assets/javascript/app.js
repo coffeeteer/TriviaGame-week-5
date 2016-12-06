@@ -40,6 +40,9 @@ function dataCapture(){
 	console.log(dataCapture());
 });
 
+//Modal when page loads
 $(window).on('load', function () {
 	  $('#myModal').modal('show');
-	});	
+
+
+});	
