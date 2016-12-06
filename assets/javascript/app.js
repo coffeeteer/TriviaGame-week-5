@@ -38,11 +38,14 @@ function dataCapture(){
 
 	console.log(test);
 	console.log(dataCapture());
+
+	//Submit button Modal
+	$('#submitButton').on('click',function() {
+		$('#submitModal').show('show');
+	});
 });
 
 //Modal when page loads
 $(window).on('load', function () {
 	  $('#myModal').modal('show');
-
-
 });	

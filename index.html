@@ -12,28 +12,9 @@
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
 <body>
-	<!-- New Modal-->
-		<!-- <div class="modal hide fade" id="myModal">
-		  <div class="modal-header">
-		    <a class="close" data-dismiss="modal">×</a>
-		    <h3>JavaScript Quiz</h3>
-		  </div>
-		  <div class="modal-body">
-		    <p>Are you ready to begin?</p>
-		  </div>
-		  <div class="modal-footer">
-		    <a href="#" class="btn">Close</a>
-		    <a href="#" class="btn btn-primary">Yup</a>
-		  </div>
-		</div> -->
-		<!-- End New Modal -->
 	<header>
 		<div id="timer">
 		</div>
-		<!-- Button trigger modal -->
-		<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-		  Launch demo modal
-		</button> -->
 
 		<!-- Modal -->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -280,10 +261,31 @@
 				<!-- <p>Name: </p>          
 				<input type="text" name="name" id="txtFirstName"/><br>
 				Your Name is: <label id="lblFirstName"></label> <br> -->
-				<button type="submit" name="submit" class="submit btn btn-primary" id="submitbutton">Submit!</button>
+				<button type="submit" name="submit" class="submit btn btn-primary btn-lg" id="submitModal" data-toggle="modal" data-target="#submitModal">Submit!</button>
+
+				<!-- Submit Button Modal -->
+				<div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="submitModalLabel">Congratulations!</h4>
+				      </div>
+				      <div class="modal-body">
+				        <p>You have finished the quiz!</p>
+				        <p>{{Put the score here}}</p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- End Submit Button Modal-->
 				
-			</div>
-		</div>
+			</div> <!-- subcontainer -->
+		</div> <!-- container -->
 	<footer>
 	</footer>	
 </body>
