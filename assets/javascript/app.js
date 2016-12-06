@@ -1,13 +1,14 @@
 $(document).ready(function() {
 	//load modal at beginning 
 	//and end of test
-	var i = 120;
+	var i = 10;
 	function timer() {
 		i --;
 		var x = document.getElementById("timer").innerHTML = i;
 		
 		if (i === 0) {
-			alert("Test is over");
+			// alert("Test is over");
+			$('#submitModal').show('show');
 			clear();
 		}
 	}
