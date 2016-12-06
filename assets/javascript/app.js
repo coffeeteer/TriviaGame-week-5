@@ -23,8 +23,10 @@ function test() {
 	var test = $('#tester').val();	
 }
 
-$('#submitbutton').on('click', function() {
+$('#submitButton').on('click', function() {
 	dataCapture();
+	//Submit button Modal
+	$('#submitModal').show('show');
 });
 
 function dataCapture(){
@@ -41,9 +43,9 @@ function dataCapture(){
 	console.log(dataCapture());
 
 	//Submit button Modal
-	$('#submitButton').on('click',function() {
-		$('#submitModal').show('show');
-	});
+	// $('#submitButton').on('click',function() {
+	// 	$('#submitModal').show('show');
+	// });
 });
 
 //Modal when page loads
