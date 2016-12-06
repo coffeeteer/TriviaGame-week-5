@@ -19,6 +19,15 @@ body {
 	padding: 0 0 10px 0;
 }
 
+.modal-title, .modal-body {
+	font-size: 180%;
+	text-align: center;
+}
+
+.modal-title {
+	font-family: 'Oleo Script', cursive;
+}
+
 #title {
 	text-align: left;
 	font-family: 'Oleo Script', cursive;
@@ -59,11 +68,7 @@ label.question-text {
 	position: relative;
 	padding-left: 25px;
 	margin-right: 15px;
-	font-size: 13px;
-}
-:checked {
-	font-weight: 800;
-	border: 1px #000;
+	font-size: 20px;
 }
 
 .testQuestions {
@@ -94,8 +99,23 @@ label.question-text {
 	}
 
 .submit {
-	padding: 3px 5px;
+	padding: 11px 16px;
 	border-radius: 3px;
 	margin: 20px;
 	margin-left: 120px;
 }
+
+
+
+/*Stylized radio buttons*/
+/*input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + i:before {
+    content:'\2718';
+    color:red;
+}
+input[type="radio"]:checked + i:before {
+    content:'\2713';
+    color:green;
+}*/
