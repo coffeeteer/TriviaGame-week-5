@@ -1,10 +1,15 @@
 $(document).ready(function() {
 	//load modal at beginning 
 	//and end of test
-	var i = 10;
+	var i = 120;
 	function timer() {
 		i --;
-		var x = document.getElementById("timer").innerHTML = i;
+		//var x = document.getElementById("timer").innerHTML = i;
+		
+		// when goTime button is clicked timer starts
+		$('#go').on('click', function() {
+			var timer = $('#timer').html(i);
+		});
 		
 		if (i === 0) {
 			// alert("Test is over");
@@ -13,7 +18,7 @@ $(document).ready(function() {
 		}
 	}
 	var m = setInterval(timer, 1000);
-	document.getElementById("timer").innerHTML = i; 
+	$("#timer").html(i); 
 	console.log(i);
 	function clear() {
 	  clearInterval(m);
@@ -50,5 +55,7 @@ function dataCapture(){
 
 //Modal when page loads
 $(window).on('load', function () {
-	  $('#myModal').modal('show');
+	  $('#myModal').modal('show', function() {
+	  	
+	  });
 });	
