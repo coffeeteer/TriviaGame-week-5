@@ -5,6 +5,7 @@ $(document).ready(function() {
 	function timer() {
 		i --;
 		//var x = document.getElementById("timer").innerHTML = i;
+		//var timer = $('#timer').html(i);
 		
 		// when goTime button is clicked timer starts
 		$('#go').on('click', function() {
