@@ -2,6 +2,7 @@ $(document).ready(function() {
 	//load modal at beginning 
 	//and end of test
 	var i = 120;
+	//var tryAgain = $('#tryAgain').val();
 	function timer() {
 		i --;
 		//var x = document.getElementById("timer").innerHTML = i;
@@ -25,15 +26,21 @@ $(document).ready(function() {
 	  clearInterval(m);
 	}
 	
-function test() {
-	var test = $('#tester').val();	
-}
+	function test() {
+		var test = $('#tester').val();	
+	}
 
-$('#submitButton').on('click', function() {
-	dataCapture();
-	//Submit button Modal
-	$('#submitModal').show('show');
-});
+	$('#submitButton').on('click', function() {
+		dataCapture();
+		//Submit button Modal
+		$('#submitModal').show('show', function(){
+			//When 'Try Again' is clicked page resets
+			$('#tryAgain').on('click',
+				$('#tryAgain').val().location.reload()
+				return true;
+			);	
+		});
+	});
 
 function dataCapture(){
 	var fname = $('#txtFirstName').val();
