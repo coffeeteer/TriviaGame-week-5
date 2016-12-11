@@ -3,11 +3,12 @@ $(document).ready(function() {
 	//load modal at beginning 
 	//and end of test
 	var i = 120;
-	var reload = function(){
+
+	//reloads page after'Try Again' is clicked
+	var reload = function(){ 
 		window.location.reload();
 		return false;
 	};
-	//var tryAgain = $('#tryAgain').val();
 
 	function timer() {
 		i --;
@@ -38,6 +39,13 @@ $(document).ready(function() {
 
 	$('#submitButton').on('click', function() {
 		dataCapture();
+		
+		//Using first modal when question is missed
+		if($('div.actual-questions' == '')){
+			$('#myModalLabel').replaceWith('<h2>Sorry you missed a question.</h2>');
+			$('#modal-para').replaceWith('<p>You missed </p>')
+		}
+
 		//Submit button Modal
 		$('#submitModal').show('show', function(){
 			//When 'Try Again' is clicked page resets
@@ -47,6 +55,8 @@ $(document).ready(function() {
 			);
 		});
 	});
+
+	
 
 function dataCapture(){
 	var fname = $('#txtFirstName').val();
@@ -70,6 +80,5 @@ function dataCapture(){
 //Modal when page loads
 $(window).on('load', function () {
 	  $('#myModal').modal('show', function() {
-	  	
 	  });
 });	
