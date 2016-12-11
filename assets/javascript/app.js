@@ -1,8 +1,14 @@
+//var load = window.location.reload();
 $(document).ready(function() {
 	//load modal at beginning 
 	//and end of test
 	var i = 120;
+	var reload = function(){
+		window.location.reload();
+		return false;
+	};
 	//var tryAgain = $('#tryAgain').val();
+
 	function timer() {
 		i --;
 		//var x = document.getElementById("timer").innerHTML = i;
@@ -35,10 +41,10 @@ $(document).ready(function() {
 		//Submit button Modal
 		$('#submitModal').show('show', function(){
 			//When 'Try Again' is clicked page resets
-			$('#tryAgain').on('click',
-				$('#tryAgain').val().location.reload()
-				return true;
-			);	
+			$('#tryAgain').on('click', function(){
+				reload();
+				}
+			);
 		});
 	});
 
