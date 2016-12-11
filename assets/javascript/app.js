@@ -1,7 +1,5 @@
 //var load = window.location.reload();
 $(document).ready(function() {
-	//load modal at beginning 
-	//and end of test
 	var i = 120;
 
 	//reloads page after'Try Again' is clicked
@@ -12,9 +10,7 @@ $(document).ready(function() {
 
 	function timer() {
 		i --;
-		//var x = document.getElementById("timer").innerHTML = i;
-		//var timer = $('#timer').html(i);
-		
+				
 		// when goTime button is clicked timer starts
 		$('#go').on('click', function() {
 			var timer = $('#timer').html(i);
@@ -41,9 +37,9 @@ $(document).ready(function() {
 		dataCapture();
 		
 		//Using first modal when question is missed
-		if($('div.actual-questions' == '')){
+		if($('input.child' == '')){
 			$('#myModalLabel').replaceWith('<h2>Sorry you missed a question.</h2>');
-			$('#modal-para').replaceWith('<p>You missed </p>')
+			$('#modal-para').replaceWith('<p>You missed a question.</p>')
 		}
 
 		//Submit button Modal
