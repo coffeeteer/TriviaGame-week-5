@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 	function timer() {
 		i --;
-				
+
 		// when goTime button is clicked timer starts
 		$('#go').on('click', function() {
 			var timer = $('#timer').html(i);
@@ -37,7 +37,7 @@ $(document).ready(function() {
 		dataCapture();
 		
 		//Using first modal when question is missed
-		if($('input.child' == '')){
+		if($('input.child' == null)){
 			$('#myModalLabel').replaceWith('<h2>Sorry you missed a question.</h2>');
 			$('#modal-para').replaceWith('<p>You missed a question.</p>')
 		}
@@ -54,16 +54,24 @@ $(document).ready(function() {
 
 	
 
-function dataCapture(){
+function dataCapture(numberCorrect, numberIncorrect){
 	var fname = $('#txtFirstName').val();
 	$('#lblFirstName').html(fname);
 	
 	var numberCorrect = $('input.cor:checked').length;
 	var numberIncorrect = 10 - numberCorrect;
-	console.log(numberCorrect);
-	console.log(numberIncorrect);
-	}
+	//var defer = $.Deferred()
+	console.log('This is correct ' + numberCorrect);
+	console.log('This is incorrect ' + numberIncorrect);
 
+	//Puting the scores in the modal
+	$('.finalScore').replaceWith(
+	'<p>'+ numberCorrect +'</p>'
+	);
+}
+
+	
+	
 	console.log(test);
 	console.log(dataCapture());
 
