@@ -33,7 +33,28 @@ $(document).ready(function() {
 		var test = $('#tester').val();	
 	}
 
-	$('#submitButton').on('click', function() {
+function dataCapture(){
+	// var fname = $('#txtFirstName').val();
+	// $('#lblFirstName').html(fname);
+	
+	var numberCorrect = $('input.cor:checked').length;
+	var numberIncorrect = 10 - numberCorrect;
+	var percentCorrect = numberCorrect * 10;
+	//var defer = $.Deferred()
+	console.log('This is correct ' + numberCorrect);
+	console.log('This is incorrect ' + numberIncorrect);
+	console.log('This is your percentage ' + percentCorrect + '%');
+
+	(function finScore(){
+		//Puting the scores in the modal
+		$('.finalScore').replaceWith(
+		'<p>'+ numberCorrect +'</p>'
+		);
+	})();
+}
+
+// Fires off the dataCapture function in modal
+$('#submitButton').on('click', function() {
 		dataCapture();
 		
 		//Using first modal when question is missed
@@ -51,27 +72,6 @@ $(document).ready(function() {
 			);
 		});
 	});
-
-	
-
-function dataCapture(numberCorrect, numberIncorrect){
-	var fname = $('#txtFirstName').val();
-	$('#lblFirstName').html(fname);
-	
-	var numberCorrect = $('input.cor:checked').length;
-	var numberIncorrect = 10 - numberCorrect;
-	//var defer = $.Deferred()
-	console.log('This is correct ' + numberCorrect);
-	console.log('This is incorrect ' + numberIncorrect);
-
-	//Puting the scores in the modal
-	$('.finalScore').replaceWith(
-	'<p>'+ numberCorrect +'</p>'
-	);
-}
-
-	
-	
 	console.log(test);
 	console.log(dataCapture());
 
