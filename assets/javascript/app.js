@@ -2,6 +2,7 @@
 $(document).ready(function() {
 	var i = 120;
 
+
 	//reloads page after'Try Again' is clicked
 	var reload = function(){ 
 		window.location.reload();
@@ -48,14 +49,16 @@ function dataCapture(){
 	(function finScore(){
 		//Puting the scores in the modal
 		$('.finalScore').replaceWith(
-		'<p>'+ numberCorrect +'</p>'
+		'<p>'+ numberCorrect +' %</p>'
 		);
 	})();
+
+
 }
 
 // Fires off the dataCapture function in modal
 $('#submitButton').on('click', function() {
-		dataCapture();
+		//dataCapture();
 		
 		//Using first modal when question is missed
 		if($('input.child' == null)){
@@ -65,6 +68,7 @@ $('#submitButton').on('click', function() {
 
 		//Submit button Modal
 		$('#submitModal').show('show', function(){
+			dataCapture();
 			//When 'Try Again' is clicked page resets
 			$('#tryAgain').on('click', function(){
 				reload();
@@ -86,3 +90,5 @@ $(window).on('load', function () {
 	  $('#myModal').modal('show', function() {
 	  });
 });	
+
+//When #timer moves off screen goes to the bottom of page in fixed position.

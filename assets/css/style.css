@@ -83,10 +83,7 @@ label.question-text {
 
 #timer {
 	margin: 0 auto;
-/*	display: inline-block;*/
-	font-size: 30pt;
 	font-family: 'digital-7';
-	color:#000;
 	font-size: 55pt;
 	color: #f0DB4F;
 	text-shadow:  0 0 12px #f0DB4F;
@@ -95,7 +92,7 @@ label.question-text {
 	border-radius: 3px;
 	position: absolute;
 	left: 50%;
-	top: 14%;
+	top: 35px;
 	}
 
 .submit {
