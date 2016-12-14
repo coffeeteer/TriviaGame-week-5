@@ -48,7 +48,7 @@ function dataCapture(){
 
 	(function finScore(){
 		//Puting the scores in the modal
-		$('.finalScore').replaceWith(
+		$('.finalScore').append(
 		'<p>'+ numberCorrect +' %</p>'
 		);
 	})();
@@ -83,6 +83,16 @@ $('#submitButton').on('click', function() {
 	// $('#submitButton').on('click',function() {
 	// 	$('#submitModal').show('show');
 	// });
+
+	//When input is :checked do something --- else go to initial
+	$('label').on('click', function(){
+		if('.question-text:checked' === true){
+			$(this).css('background', 'yellow');
+		}else if ('label:check' === false) {
+			$(this).css('background', 'initial');
+		}
+		
+	});
 });
 
 //Modal when page loads
