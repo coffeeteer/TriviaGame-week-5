@@ -92,12 +92,15 @@ $('#submitButton').on('click', function() {
 	// 		$(this).css('background', 'initial');
 	// 	}
 	// });
-
-	$('label').on('click', function(){
-		if( $('input').attr('checked') === true) {
+	
+	$('.question-text').on('click', function() {
+		if($(this).prop('radio', 'checked')){
 			$(this).css('background', 'yellow');
-		};
+		} else if($('.question-text').prop('radio', 'checked') === false) {
+			$('.question-text').css('background', 'white');
+		}
 	});
+	
 
 });
 
