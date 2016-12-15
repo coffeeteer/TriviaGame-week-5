@@ -85,14 +85,20 @@ $('#submitButton').on('click', function() {
 	// });
 
 	//When input is :checked do something --- else go to initial
+	// $('.question-text label input').on('click', function(){
+	// 	if('.question-text:checked' === true){
+	// 		$(this).css('background', 'yellow');
+	// 	}else if ('label:check' === false) {
+	// 		$(this).css('background', 'initial');
+	// 	}
+	// });
+
 	$('label').on('click', function(){
-		if('.question-text:checked' === true){
+		if( $('input').attr('checked') === true) {
 			$(this).css('background', 'yellow');
-		}else if ('label:check' === false) {
-			$(this).css('background', 'initial');
-		}
-		
+		};
 	});
+
 });
 
 //Modal when page loads
