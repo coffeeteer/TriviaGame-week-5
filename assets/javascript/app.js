@@ -92,13 +92,19 @@ $('#submitButton').on('click', function() {
 	// 		$(this).css('background', 'initial');
 	// 	}
 	// });
-	
-	$('.question-text').on('click', function() {
-		if($(this).prop('radio', 'checked')){
-			$(this).css('background', 'yellow');
-		} else if($('.question-text').prop('radio', 'checked') === false) {
-			$('.question-text').css('background', 'white');
-		}
+
+	$('div.actual-questions').on('click', function(){
+		$(this).css({
+			'background': 'yellow',
+			'font-weight' : 'bold'
+		});
+	});
+
+	$('#q1-1').off('click', function() {
+		$(this).css({
+			'background': 'white',
+			'font-weight' : 'normal'
+		});
 	});
 	
 

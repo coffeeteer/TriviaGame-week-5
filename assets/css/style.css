@@ -46,10 +46,6 @@ body {
 	width: 75;
 }
 
-input[type=radio] {
-	/*visibility: hidden;*/
-}
-
 input[type=radio]:hover, label.question-text {
 	cursor: pointer;
 }
@@ -58,9 +54,10 @@ input[type=radio]:hover, label.question-text:hover {
 	color: #666;
 }
 
-input[type=radio]:checked, label.question-text:checked {
+/*input[type=radio]:checked, label.question-text:checked {
 	font-weight: 800;
-}
+	background: yellow;
+}*/
 
 label.question-text {
 	display: inline-block;
