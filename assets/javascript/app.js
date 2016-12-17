@@ -93,20 +93,21 @@ $('#submitButton').on('click', function() {
 	// 	}
 	// });
 
-	$('div.actual-questions').on('click', function(){
-		$(this).css({
-			'background': 'yellow',
-			'font-weight' : 'bold'
-		});
-	});
+	// $('label.question-text').on('click', function(){
+	// 	$(this).css({
+	// 		'background': 'yellow',
+	// 		'font-weight' : 'bold'
+	// 	});
+	// 	console.log('on click fired');
+	// });
 
-	$('#q1-1').off('click', function() {
-		$(this).css({
-			'background': 'white',
-			'font-weight' : 'normal'
-		});
-	});
-	
+	// $('label.question-text').off('click', function() {
+	// 	$(this).css({
+	// 		'background': 'white',
+	// 		'font-weight' : 'normal'
+	// 	});
+	// 	console.log('Off click fired');
+	// });
 
 });
 
@@ -116,4 +117,20 @@ $(window).on('load', function () {
 	  });
 });	
 
+
+$('label.question-text').on('click', function(){
+	$(this).css({
+		'background': 'yellow',
+		'font-weight' : 'bold'
+	});
+	console.log('on click fired');
+});
+
+$('label.question-text').off('click', function() {
+	$(this).css({
+		'background': 'white',
+		'font-weight' : 'normal'
+	});
+	console.log('Off click fired');
+});
 //When #timer moves off screen goes to the bottom of page in fixed position.
