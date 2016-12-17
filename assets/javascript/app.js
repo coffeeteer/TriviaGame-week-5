@@ -56,8 +56,8 @@ function dataCapture(){
 
 }
 
-// Fires off the dataCapture function in modal
-$('#submitButton').on('click', function() {
+	// Fires off the dataCapture function in modal
+	$('#submitButton').on('click', function() {
 		//dataCapture();
 		
 		//Using first modal when question is missed
@@ -72,8 +72,7 @@ $('#submitButton').on('click', function() {
 			//When 'Try Again' is clicked page resets
 			$('#tryAgain').on('click', function(){
 				reload();
-				}
-			);
+			});
 		});
 	});
 	console.log(test);
@@ -93,21 +92,22 @@ $('#submitButton').on('click', function() {
 	// 	}
 	// });
 
-	// $('label.question-text').on('click', function(){
-	// 	$(this).css({
-	// 		'background': 'yellow',
-	// 		'font-weight' : 'bold'
-	// 	});
-	// 	console.log('on click fired');
-	// });
+	$('label.question-text').on('click', function(){
+		$(this).css({
+			'background': 'yellow',
+			'font-weight' : 'bold'
+		});
+		console.log('on click fired');
+	});
 
-	// $('label.question-text').off('click', function() {
-	// 	$(this).css({
-	// 		'background': 'white',
-	// 		'font-weight' : 'normal'
-	// 	});
-	// 	console.log('Off click fired');
-	// });
+	$('label.question-text').off('click', function() {
+		console.log('Off click fired 1');
+		$(this).css({
+			'background': 'white',
+			'font-weight' : 'normal'
+		});
+		console.log('Off click fired 2');
+	});
 
 });
 
@@ -118,19 +118,5 @@ $(window).on('load', function () {
 });	
 
 
-$('label.question-text').on('click', function(){
-	$(this).css({
-		'background': 'yellow',
-		'font-weight' : 'bold'
-	});
-	console.log('on click fired');
-});
 
-$('label.question-text').off('click', function() {
-	$(this).css({
-		'background': 'white',
-		'font-weight' : 'normal'
-	});
-	console.log('Off click fired');
-});
 //When #timer moves off screen goes to the bottom of page in fixed position.
